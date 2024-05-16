@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.nav-bar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5rem;
+}
+.drop-items {
+  position: absolute;
+  top: 2.65rem;
+  z-index: 9999;
+  font-size: 1rem;
+  width: fit-content;
+}
+.drop-items a {
+  background-color: black;
+  color: white;
+  display: flex;
+  padding: 0 1rem;
+  margin: auto;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-1rem);
+}
+
+.nav-links a:hover {
+  background-color: gray;
+}
+
+.drop-down:hover .drop-items a {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0.75rem);
+  transition: transform 0.1s ease-in;
+}

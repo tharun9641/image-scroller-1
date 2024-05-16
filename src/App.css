@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.App {
+  text-align: center;
+  width: 100%;
+}
+
+.nav {
+  position: relative;
+  width: 100%;
+}
